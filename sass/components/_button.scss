@@ -1,0 +1,72 @@
+.btn {
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1.8rem 3rem;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+// Header
+.header {
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+}
+
+// Sidebar
+.nav-button {
+  border: none;
+  border-radius: 0;
+
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+  }
+
+  &::before {
+    transform: translateY(-1.5rem);
+  }
+
+  &::after {
+    transform: translateY(1.3rem);
+  }
+
+  @include respond(bp-large) {
+    margin-top: 0;
+    margin-right: 3rem;
+
+    &::before {
+      transform: translateY(-1.2rem);
+    }
+
+    &::after {
+      transform: translateY(1rem);
+    }
+  }
+}
+
+// Homes
+.home {
+  &__btn {
+    grid-column: 1 / -1;
+  }
+}
