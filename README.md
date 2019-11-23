@@ -1,4 +1,5 @@
 # Nexter-Home-Page
+
 Advanced hotel home page built with CSS (Sass) Grid, showing the power of CSS Grid!
 
 This project has:
@@ -8,5 +9,6 @@ This project has:
 - Reusable elements such as headings was used to save time,
 - Sprit SVGs icons that is really useful which is the basic for real professionals. With that the application request just once to load all the icons instead of request one by one,
 - Sass control with BEM structure.
+- Gulp task runner was used to compile CSS into Sass and to minify the CSS file.
 
 It was tested in Google Chrome, Safari, Firefox and Opera.

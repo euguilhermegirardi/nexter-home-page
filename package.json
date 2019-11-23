@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
-  },
   "author": "Girardi",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-sass": "^4.0.2"
   }
 }
